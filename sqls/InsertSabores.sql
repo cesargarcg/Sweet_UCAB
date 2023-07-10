@@ -1,0 +1,17 @@
+INSERT INTO sabor (s_nombre,s_descripcion) VALUES ('Chocolate','Sabor a chocolate');
+INSERT INTO sabor (s_nombre,s_descripcion) VALUES ('Menta','Sabor a menta');
+INSERT INTO sabor (s_nombre,s_descripcion) VALUES ('Acido','Sabor acido');
+INSERT INTO sabor (s_nombre,s_descripcion) VALUES ('Fresa','Sabor a fresa');
+INSERT INTO sabor (s_nombre,s_descripcion) VALUES ('Lima','Sabor a lima');
+INSERT INTO sabor (s_nombre,s_descripcion) VALUES ('Naranja','Sabor a naranja');
+INSERT INTO sabor (s_nombre,s_descripcion) VALUES ('Cola','Sabor a cola');
+INSERT INTO sabor (s_nombre,s_descripcion) VALUES ('Melocoton','Sabor a melocoton');
+INSERT INTO sabor (s_nombre,s_descripcion) VALUES ('Patilla','Sabor a patilla');
+INSERT INTO sabor (s_nombre,s_descripcion) VALUES ('Manzana','Sabor a manzana');
+INSERT INTO sabor (s_nombre,s_descripcion) VALUES ('Picante','Sabor picante');
+INSERT INTO sabor (s_nombre,s_descripcion) VALUES ('Eucalipto','Sabor a eucalipto');
+INSERT INTO sabor (s_nombre,s_descripcion) VALUES ('Miel','Sabor a miel');
+INSERT INTO sabor (s_nombre,s_descripcion) VALUES ('Mentol','Sabor a mentol');
+INSERT INTO sabor (s_nombre,s_descripcion) VALUES ('Limon','Sabor a limon');
+INSERT INTO sabor (s_nombre,s_descripcion) VALUES ('Melisa','Sabor a melisa');
+INSERT INTO sabor (s_nombre,s_descripcion) VALUES ('Xylitol','Sabor a xylitol');

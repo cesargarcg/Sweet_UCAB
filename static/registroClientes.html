@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Crear Usuarios</title>
+        <link rel="stylesheet" href="https://bootswatch.com/5/quartz/bootstrap.min.css">
+        <link rel="stylesheet" href="/static/main.css">
+    </head>
+
+    <body class="bg-dark text-black">
+        <h1 id="PagTxt" class="text-black">Registro Clientes</h1>      
+        <div class="container">
+            <div class="col-md-4 offset-md-4">
+                <a href="http://localhost:5000">
+                    <img alt="Sweet UCAB" src="/static/images/sweet_ucab_logo.png"
+                    width="450" height="120">
+                 </a>
+                <h2 style="text-align: center;">Registro clientes</h2>
+
+                <form id="userForm" class="card card-body text-white" style="background-color: #202020;">
+                    <label for="username">Username</label>
+                    <input
+                    type="text"
+                    name="username"
+                    maxlength="20"
+                    placeholder="Username" 
+                    class="form-control mb-2" 
+                    required 
+                    />
+                    
+                    
+                    <label for="username">Password</label>
+                    <input
+                    type="password"
+                    name="password"
+                    placeholder="máximo 8 caracteres"
+                    maxlength="8" 
+                    class="form-control mb-2" 
+                    required> 
+                    </input>
+
+                    <label for="username" class="my-0">Tipo de cliente</label>
+                    <select name="tipo" required>
+                        <option value="0" selected>Seleccione tipo</option>
+                        <option value="1">Cliente Natural</option>
+                        <option value="2">Cliente Jurídico</option>                       
+                    </select>
+
+                    <button class="btn btn-primary my-2">Crear usuario</button>
+                </form>
+
+                <ul id="userlist" class="list-group">
+                </ul>
+            </div>
+        </div>
+
+        <script src="/static/scripts/registroClientes.js"></script>
+    </body>
+</html>

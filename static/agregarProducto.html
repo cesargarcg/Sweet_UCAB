@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Agregar Producto</title>
+        <link rel="stylesheet" href="https://bootswatch.com/5/quartz/bootstrap.min.css">
+        <link rel="stylesheet" href="/static/main.css">
+    </head>
+
+    <body class="bg-dark text-black">
+        <h1 id="PagTxt" class="text-black"></h1>      
+        <div class="container">
+            <div class="col-md-4 offset-md-4">
+                <a href="http://localhost:5000">
+                    <img alt="Sweet UCAB" src="/static/images/sweet_ucab_logo.png"
+                    width="450" height="120">
+                 </a>
+                <h2 style="text-align: center;">Agregar producto</h2>
+                <form
+                    id="dulceForm"
+                    class="card card-body text-white" style="background-color: #202020;"
+                    >
+                    <label for="nombre">Nombre</label>
+                    <input
+                        type="text"
+                        name="nombre"
+                        placeholder="Nombre"
+                        class="form-control mb-2"
+                        required
+                    />
+                    <label for="precio">Precio</label>
+                    <input
+                        type="number"
+                        name="precio"
+                        placeholder="Precio"
+                        class="form-control mb-2"
+                        required
+                    />
+                    <label for="descripcion">Descripcion</label>
+                    <input
+                        type="text"
+                        name="descripcion"
+                        placeholder="Descripcion"
+                        class="form-control mb-2"
+                        required
+                    />
+                    <label for="peso">Peso</label>
+                    <input
+                        type="number"
+                        name="peso"
+                        placeholder="Indique el peso del caramelo (gramos)"
+                        class="form-control mb-2"
+                        required
+                    />
+                    
+                    <label for="tipo">Rubro</label>
+                    <select class="form-select" id="rubro"></select>
+
+                    <label for="forma">Forma</label>
+                    <select class="form-select" id="forma"></select>
+
+                    <label for="tamano">Tamano (Escala 1-5)</label>
+                    <select class="form-select" id="tamano"></select>
+
+                    <label for="color">Color</label>
+                    <div class="form-check" id="colordiv">
+                    </div>
+                    
+                    <label for="sabor">Sabor</label>
+                    <div class="form-check" id="sabordiv">
+                    </div>
+                
+                    <label for="imagen">Imagen</label>
+                    <input
+                        type="file"
+                        name="imagen"
+                        class="form-control mb-2"
+                    />
+
+                    <button class="btn btn-primary">Guardar</button>
+                </form>
+                
+            </div>
+        </div>
+
+        <script src="/static/scripts/agregarProducto.js"></script>
+    </body>
+</html>

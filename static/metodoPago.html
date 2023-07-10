@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Flask app</title>
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://bootswatch.com/5/quartz/bootstrap.min.css">
+
+    <link rel="stylesheet" href="/static/main.css">
+</head>
+
+<body>
+
+    <body class="bg-dark text-white">
+
+        <div class="container">
+            <div class="col.md.4 offset.md.4">
+                <h1> Agregar Metodos de pago</h1>
+         
+                <form id="pagoForm" class="card card-body text-white" style="background-color: #202020;">
+                    <div class="radio">
+                        <h2>Seleccione el tipo de metodo de pago a agregar:</h2>
+                        <input type="radio" name="metodo" id="TC" value="Credito">
+                        <label for="TC">Tarjeta de Credito</label><br>
+    
+                        <input type="radio" name="metodo" id="TD" value="Debito">
+                        <label for="TD">Tarjeta de Debito</label><br>
+    
+                        <input type="radio" name="metodo" id="Zelle" value="Zelle">
+                        <label for="Zelle">Zelle</label><br>
+    
+                        <input type="radio" name="metodo" id="PagoMovil" value="PagoMovil">
+                        <label for="PagoMovil">Pago Movil</label><br>
+
+                        <input type="radio" name="metodo" id="PayPal" value="PayPal">
+                        <label for="PayPal">PayPal</label><br>
+
+                    </div>
+
+                    <button class="btn btn-primary" onclick="Redireccion()">Siguiente</button>
+                </form>
+                    <div class="container" id="content">         
+                    </div>
+
+            </div>
+
+        </div>
+
+        <script src="/static/scripts/registroMetodo.js"></script>
+    </body>
+
+</html>

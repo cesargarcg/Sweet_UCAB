@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Agregar persona contacto</title>
+        <link rel="stylesheet" href="https://bootswatch.com/5/quartz/bootstrap.min.css">
+        <link rel="stylesheet" href="/static/main.css">
+    </head>
+
+    <body class="bg-dark text-black">
+        <h1 class="text-black">Registro Clientes</h1>      
+        <div class="container">
+            <div class="col-md-4 offset-md-4">
+                <a href="http://localhost:5000">
+                    <img alt="Sweet UCAB" src="/static/images/sweet_ucab_logo.png"
+                    width="450" height="120">
+                </a>
+                <h2 id="PagTxt" style="text-align: center;">Creando Cliente Juridico | Agregando persona de contacto</h2>
+                <div id="content">
+                    <form id="userForm" class="card card-body text-white" style="background-color: #202020;">
+
+                        <label for="riff">Nombre</label>
+                        <input
+                        type="text"
+                        name="nombre"
+                        maxlength="20"
+                        placeholder="Nombre" 
+                        class="form-control mb-2" 
+                        required></input>
+
+                        <label for="riff">Apellido</label>
+                        <input
+                        type="text"
+                        name="apellido"
+                        maxlength="20"
+                        placeholder="Apellidos"
+                        class="form-control mb-2"></input>
+
+                        <label for="riff">Codigo Telefono</label>
+                        <input
+                        oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                        type="number"
+                        name="codigo"
+                        maxlength="4"
+                        placeholder="04XX" 
+                        class="form-control mb-2" 
+                        required></input>
+
+                        <label for="riff">Numero Telefono</label>
+                        <input
+                        oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                        type="number"
+                        name="telefono"
+                        maxlength="7"
+                        placeholder="XXXXXXX"
+                        class="form-control mb-2"
+                        required></input>
+
+                        <button class="btn btn-primary">Crear cliente juridico</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <script src="/static/scripts/registroPersonaContacto.js"></script>
+    </body>
+</html>

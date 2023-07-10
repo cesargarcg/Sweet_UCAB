@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://bootswatch.com/5/quartz/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/main.css">
+</head>
+
+<body>
+    <h1>DASHBOARD</h1>
+
+    <div class="row">
+        <div class="col-lg-4" style="text-align:center">
+            <div class="bs-component" style="text-align:center" id="col1">
+                <div class="card text-white bg-light mb-2" style="width: 100%;" id="card1">
+                    <h3 class="text-black">Ventas por trimestre</h3>
+                    <canvas id="myChart1"></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4" style="text-align:center">
+            <div class="bs-component" style="text-align:center" id="col1">
+                <div class="card text-white bg-light mb-2" id="card2">
+                    <h3 class="text-black">Producto más vendido</h3>
+                    <div class="card-body">
+                        <h4 id="topProducto"></h4>
+                        <h4 id="topProductoCant"></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4" style="text-align:center">
+            <div class="bs-component" style="text-align:center" id="col1">
+                <div class="card text-white bg-light mb-2 " style="width: 100%;" id="card3">
+                    <h3 class="text-black">Producto menos vendido</h3>
+                    <div class="card-body">
+                        <h4 id="worseProducto"></h4>
+                        <h4 id="worseProductoCant"></h4>
+                    </div>                 
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4" style="text-align:center">
+            <div class="bs-component" style="text-align:center" id="col1">
+                <div class="card text-white bg-light mb-2" style="width: 100%;" id="card4">
+                    <h3 class="text-black">Metodos de pago por porcentaje de uso</h3>
+                    <canvas id="myChart4"></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4" style="text-align:center">
+            <div class="bs-component" style="text-align:center" id="col1">
+                <div class="card text-white bg-light mb-2" style="width: 100%;" id="card5">
+                    <h3 class="text-black">Puntos</h3>
+                    <canvas id="myChart5"></canvas>
+                </div>
+            </div>
+        </div>     
+        <div class="col-lg-4" style="text-align:center">
+            <div class="bs-component" style="text-align:center" id="col1">
+                <div class="card text-white bg-light mb-2" style="width: 100%;" id="card6">
+                    <h3 class="text-black">Cantidad de ventas en linea</h3>
+                    <div class="card-body">
+                        <h4 id="ventasEnlinea"></h4>
+                        <h4 id="ventasEnlineaCant"></h4>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4" style="text-align:center">
+        </div>
+        <div class="col-lg-4" style="text-align:center">
+            <div class="bs-component" style="text-align:center" id="col1">
+                <div class="card text-white bg-light mb-2" style="width: 100%;" id="card7">
+                    <h3 class="text-black">Cantidad de ventas por tienda</h3>
+                    <canvas id="myChart7"></canvas>
+                </div>
+            </div>
+        </div>     
+        <div class="col-lg-4" style="text-align:center">
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="/static/scripts/dashboard.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Crear Cliente</title>
+        <link rel="stylesheet" href="https://bootswatch.com/5/quartz/bootstrap.min.css">
+        <link rel="stylesheet" href="/static/main.css">
+    </head>
+
+    <body class="bg-dark text-black">
+        <h1 class="text-black">Registro Clientes</h1>      
+        <div class="container">
+            <div class="col-md-4 offset-md-4">
+                <a href="http://localhost:5000">
+                    <img alt="Sweet UCAB" src="/static/images/sweet_ucab_logo.png"
+                    width="450" height="120">
+                </a>
+                <h2 id="PagTxt" style="text-align: center;">Creando Cliente Juridico</h2>
+                <div id="content">
+                    <form id="userForm" class="card card-body text-white" style="background-color: #202020;">
+                        <label for="rif">RIF</label>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">J-</span>
+                            <input
+                            oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                            type="text"
+                            name="rif"
+                            placeholder="12345678" 
+                            class="form-control"
+                            maxlength="10" 
+                            required 
+                            />
+                        </div>
+
+                        <label for="riff">Denominacion Comercial</label>
+                        <input
+                        type="text"
+                        name="dencom"
+                        maxlength="30"
+                        placeholder="Denominacion" 
+                        class="form-control mb-2" 
+                        required></input>
+
+                        <label for="riff">Razon Social</label>
+                        <input
+                        type="text"
+                        name="razsoc"
+                        maxlength="30"
+                        placeholder="Razon Social"
+                        class="form-control mb-2"
+                        required></input>
+
+                        <label for="riff">Pagina Web</label>
+                        <input
+                        type="text"
+                        name="pagina"
+                        maxlength="100"
+                        placeholder="Url" 
+                        class="form-control mb-2" 
+                        required></input>
+
+                        <label for="riff">Capital</label>
+                        <input
+                        oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                        type="number"
+                        name="capital"
+                        maxlength="10"
+                        placeholder="00000000"
+                        class="form-control mb-2"
+                        required></input>
+
+                        <label for="riff">Direccion Fiscal: Estado</label>
+                        <select class="form-select" id="fiscal" required></select>
+
+                        <label for="riff">Direccion Principal: Estado</label>
+                        <select class="form-select" id="principal" required></select>
+
+                        <label for="riff">Codigo Telefono</label>
+                        <input
+                        oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                        type="number"
+                        name="codigo"
+                        maxlength="4"
+                        placeholder="02XX" 
+                        class="form-control mb-2" 
+                        required></input>
+
+                        <label for="riff">Numero Telefono</label>
+                        <input
+                        oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                        type="number"
+                        name="telefono"
+                        maxlength="7"
+                        placeholder="XXXXXXX"
+                        class="form-control mb-2"
+                        required></input>
+
+                        <button class="btn btn-primary">Siguiente</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <script src="/static/scripts/registroTipoClienteJuridico.js"></script>
+    </body>
+</html>

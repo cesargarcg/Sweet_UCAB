@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Carrito</title>
+        <link rel="stylesheet" href="https://bootswatch.com/5/quartz/bootstrap.min.css">
+        <link rel="stylesheet" href="/static/main.css">
+    </head>
+<body>
+    <h1 id="PagTxt" class="text-black"></h1>
+    <a id="home" href="http://localhost:5000">
+        <img alt="Sweet UCAB" src="/static/images/sweet_ucab_logo.png"
+        width="450" height="120">
+    </a>
+    <div class="container">
+
+            <h2 id="PagTxt" style="text-align: center;">Seleccionar productos</h2>
+        <div class="row">
+            <!-- Elementos generados a partir del JSON -->
+            <main id="items" class="col-sm-8 row"></main>
+            <!-- Carrito -->
+            <aside class="col-sm-4">
+                <h2>Carrito</h2>
+                <!-- Elementos del carrito -->
+                <ul id="carrito" class="list-group"></ul>
+                <hr>
+                <!-- Precio total -->
+                <p class="text-right">Total: <span id="total"></span>&dollar;</p>
+                <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
+                <button id="procesar"  class="btn btn-danger" > Procesar Compra</button>
+            </aside>
+        </div>
+    </div>
+    <script src="/static/scripts/cajero.js"></script>
+</body>
+</html>

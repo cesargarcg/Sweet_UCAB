@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Python Flask App</title>
+        <link rel="stylesheet" href="https://bootswatch.com/5/quartz/bootstrap.min.css">
+        <link rel="stylesheet" href="/static/main.css">
+        <link rel="stylesheet" href="/static/home.css" />
+    </head>
+
+    <body class="bg-dark text-white">
+      <div>        
+        <div class="home-container">
+          <div class="home-container1">
+            <a
+              href="http://localhost:5000"
+            >
+              <img
+                src="/static/images/sweet_ucab_logo.png"
+                alt="image"
+                class="home-image"
+              />
+            </a>
+          </div>
+          <div class="home-container2">
+            <h1><span>Registro de usuarios</span></h1>
+          </div>
+          <form class="home-form">
+            <label for="username">Nombre</label>
+            <input
+              type="text"
+              placeholder="Pedro Perez"
+              name="username"
+              required
+              id="username"
+              class="card bg-dark text-white"
+            />
+            <label for="username">Correo</label>
+            <input
+              type="email"
+              placeholder="algo@algo.algo"
+              name="email"
+              required
+              class="card bg-dark text-white"
+            />
+            <label for="username">Clave</label>
+            <input
+              type="password"
+              placeholder="password"
+              required
+              multiple="password"
+              class="card bg-dark text-white"
+            />
+            <label for="username">Tipo</label>
+            <div class="nav-link  my-0">
+              <select class="bg-dark text-white" required name="Tipo">
+                <option value="Cliente Natural">Natural</option>
+                <option value="Cliente Juridico">Juridico</option>
+                <option value="Empleado">Empleado</option>
+              </select>
+            </div>
+          </form>
+        </div>
+      </div>
+    </body>
+</html>

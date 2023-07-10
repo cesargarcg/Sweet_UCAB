@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Agregar metodo de pago</title>
+        <link rel="stylesheet" href="https://bootswatch.com/5/quartz/bootstrap.min.css">
+        <link rel="stylesheet" href="/static/main.css">
+    </head>
+
+    <body class="bg-dark text-black">
+        <h1 id="PagTxt" class="text-black"></h1>      
+        <div class="container">
+            <div class="col-md-4 offset-md-4">
+                <a href="http://localhost:5000">
+                    <img alt="Sweet UCAB" src="/static/images/sweet_ucab_logo.png"
+                    width="450" height="120">
+                 </a>
+                <h2 style="text-align: center;">Agregar tarjeta de credito</h2>
+
+                <form id="creditoForm" class="card card-body text-white" style="background-color: #202020;">
+                    <label for="numeroTarjeta">Numero de Tarjeta</label>
+                    <input
+                    type="text"
+                    name="numeroTarjeta"
+                    placeholder="Ingrese el numero de tarjeta" 
+                    maxlength="20"
+                    class="form-control mb-2" 
+                    required 
+                    />
+
+                    <label for="nombre">Nombre tarjetahabiente</label>
+                    <input
+                    type="text"
+                    name="nombre"
+                    placeholder="Ingrese el nombre de tarjetahabiente" 
+                    class="form-control mb-2" 
+                    required 
+                    />
+                    <button class="btn btn-primary">Save</button>
+                </form>
+            </div>
+        </div>
+
+        <script src="/static/scripts/credito.js"></script>
+    </body>
+</html>

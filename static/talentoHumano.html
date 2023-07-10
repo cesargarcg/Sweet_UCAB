@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Talento humano</title>
+    <link rel="stylesheet" href="https://bootswatch.com/5/quartz/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body class="bg-dark text-white">
+    <h1 class="text-black">TALENTO HUMANO</h1>
+    <nav>
+        <ul>
+            <li><a class="text-black" href="http://localhost:5000/">REPORTE</a></li>
+        </ul>
+    </nav>
+    <table class="table table-hover text-white" id="reportes" cellspacing = 15>
+        <tr class="table-primary">
+            <th style="width:12%">CI del Empleado</th>
+            <th style="width:12%">Nombre y apellido</th>
+            <th style="width:12%">Total de dias con inasistencia por periodo de tiempo</th>
+            <th style="width:12%">Total de dias con llegada tarde por periodo de tiempo</th>
+            <th style="width:12%">Total de dias con cumplimiento de horario por periodo de tiempo</th>
+            <th style="width:12%">Hora Promedio Entrada</th>
+            <th style="width:12%">Hora Promedio Salida</th>
+            <th style="width:12%">Hora entrada (horario asignado)</th>
+            <th style="width:12%">Hora de salida (horario asignado)</th>
+        </tr>
+
+        <tbody id="table">
+
+        </tbody>
+    </table>
+    <button id="generar" class="btn btn-primary">Generar PDF</button>
+    <script src="/static/scripts/talentoHumano.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    opacity: 0.85;
+    color: white;
+    padding: 5px;
+    width: 150px;
+}
+#aqui{
+    text-decoration: none;
+    opacity: 1;
+    color: white;
+    padding: 10px;
+    width: 100%;
+}
+h1 {
+    position: relative;
+    text-align: center;
+    background-color: white; 
+    color: black;
+    padding: 5px;
+    width: 100%;
+}
+nav ul{
+    position:relative;
+    background-color: #ffffff;  
+    width: 100%;
+    list-style-type:none;
+    text-align: center;
+    padding: 5px;
+}
+nav li {
+    display: inline-flex;
+    border: black;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    width: 200px;
+}

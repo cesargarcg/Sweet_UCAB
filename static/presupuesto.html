@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Crear Cliente</title>
+        <link rel="stylesheet" href="https://bootswatch.com/5/quartz/bootstrap.min.css">
+        <link rel="stylesheet">
+    </head>
+<body>
+    <h1 class="text-black">Realizar Presupuesto</h1>
+    <a id="home" href="http://localhost:5000">
+       
+    </a>
+    <div class="container">
+
+            <h2 id="PagTxt" style="text-align: center;">Solicitud de Presupuesto</h2>
+        <div class="row">
+            <!-- Elementos generados a partir del JSON -->
+            <main id="items" class="col-sm-8 row"></main>
+            <!-- Carrito -->
+            <aside class="col-sm-4">
+                <h2>Carrito</h2>
+                <!-- Elementos del carrito -->
+                <ul id="carrito" class="list-group"></ul>
+                <hr>
+                <!-- Precio total -->
+                <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
+                <button id="procesar"  class="btn btn-danger" > Enviar</button>
+            </aside>
+        </div>
+    </div>
+    <script src="/static/scripts/Presupuesto.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cambiar estatus</title>
+        <link rel="stylesheet" href="https://bootswatch.com/5/quartz/bootstrap.min.css">
+        <link rel="stylesheet" href="/static/main.css">
+    </head>
+
+    <body class="bg-dark text-black">
+        <h1 id="PagTxt" class="text-black"></h1>      
+        <div class="container">
+            <div class="col-md-4 offset-md-4">
+                <a href="http://localhost:5000">
+                    <img alt="Sweet UCAB" src="/static/images/sweet_ucab_logo.png"
+                    width="450" height="120">
+                 </a>
+                <h2 style="text-align: center;">Cambiar estatus</h2>
+                <form id="userForm" class="card card-body text-white" style="background-color: #202020;">
+                    <label for="name">Numero de orden</label>
+                    <input
+                    type="text"
+                    name="numero"
+                    placeholder="Numero" 
+                    class="form-control mb-2"
+                    readonly 
+                    required 
+                    />
+                    
+                    
+                    <label for="name">Estatus</label>
+                    <select class="form-select my-2" id="estatus" required></select>
+
+                    <button class="btn btn-primary">Save</button>
+                </form>
+                
+            </div>
+        </div>
+
+        <script src="/static/scripts/cambiarEstatusFisico.js"></script>
+    </body>
+</html>

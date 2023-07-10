@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pagar</title>
+        <link rel="stylesheet" href="https://bootswatch.com/5/quartz/bootstrap.min.css">
+        <link rel="stylesheet" href="/static/main.css">
+    </head>
+
+    <body class="bg-dark text-black">
+        <h1 id="PagTxt" class="text-black"></h1>      
+        <div class="container">
+            <div class="col-md-4 offset-md-4">
+                <a href="http://localhost:5000">
+                    <img alt="Sweet UCAB" src="/static/images/sweet_ucab_logo.png"
+                    width="450" height="120">
+                 </a>
+                <h2 style="text-align: center;">Forma de pago</h2>
+                <form
+                    id="pagarForm"
+                    class="card card-body text-white" style="background-color: #202020;"
+                    >
+                    <label for="nombre" id="labelNmb">Nombre Cliente</label>
+                    <input
+                        type="text"
+                        name="nombre"
+                        placeholder="Nombre"
+                        class="form-control mb-2"
+                        readonly
+                        required
+                    />
+                    <label for="rif" id="labelRif">Rif</label>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">J-</span>
+                        <input
+                        oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                        type="text"
+                        name="rif"
+                        placeholder="12345678" 
+                        class="form-control"
+                        maxlength="10" 
+                        required
+                        readonly 
+                        />
+                    </div>
+
+                    <fieldset id="fieldset">
+                        <legend><h3>Metodos de pago</h3> </legend>
+                    
+                    </fieldset>
+                    
+                    <label for="montoTotal">Monto Total</label>
+                    <input
+                        type="number"
+                        name="montoTotal"
+                        class="form-control mb-2"
+                        readonly
+                        required
+                    />
+
+                    <button class="btn btn-primary">Pagar</button>
+                </form>
+                
+            </div>
+        </div>
+
+        <script src="/static/scripts/pagarFisico.js"></script>
+    </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rol / Accion</title>
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://bootswatch.com/5/quartz/bootstrap.min.css">
+
+    <link rel="stylesheet" href="/static/main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="col.md.4 offset.md.4">
+             <h1> Crear Rol</h1>
+
+             <form id="createRolForm" class="card card-body text-white" style="margin: auto; width: 450px;">
+
+                <label for="username"> Nombre del Rol</label>
+                <input type="text" name="name" id="nombre" placeholder="Rol name" class="form.control mb.2"  style="width : 300px" required/>
+                <label for="Descripción"> Descripción del Rol</label>
+                <input type="text" name="descripcion" id="desc" placeholder="Rol descripcion" class="form.control mb.2"  style="width : 300px" required/>
+                
+                <label for>
+                  <fieldset id="fieldset">
+                      <legend>Seleccione las acciones del rol</legend>
+                  
+                  </fieldset>
+
+                <table name = "andres"></table>
+                  
+               <div></div>
+                <button class="btn btn-primary" style="width:300px; margin-top:10px" > Registrar Rol</button>
+
+            </form>
+
+
+
+
+
+        </div>            
+    </div>
+    <script src="/static/scripts/registroRol.js"></script>
+
+
+</body>
+
+
+</html>

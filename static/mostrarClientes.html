@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Clientes Creados</title>
+        <link rel="stylesheet" href="https://bootswatch.com/5/quartz/bootstrap.min.css">
+        <link rel="stylesheet" href="/static/main.css">
+    </head>
+<body class="bg-dark text-white">
+    <h1 class="text-black">Clientes Registrados</h1>
+    <nav>
+        <ul>
+            <li><a href="http://localhost:5000/clientesRegistrados">Clientes Registrados</a></li>
+        </ul>
+    </nav>
+    <table class="table table-hover text-white">
+        <tr>
+            <th style="width:10%">Id</th>
+            <th style="width:35%">Nombre / Den Comercial</th>
+            <th style="width:25%">Tipo</th>
+            <th style="width:30%">RIF</th>
+            <th style="width:15%">Actualizar</th>
+            <th style="width:15%">Eliminar</th> 
+        </tr>
+
+        <tbody id="table">
+
+        </tbody>
+    </table>
+    <script src="/static/scripts/mostrarClientes.js"></script>
+</body>
+</html>

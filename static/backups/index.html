@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registro Usuario</title>
+        <link rel="stylesheet" href="https://bootswatch.com/5/united/bootstrap.min.css">
+        <link rel="stylesheet" href="/static/main.css">
+    </head>
+
+    <body class="bg-dark text-white">
+        <div class="container">
+            <div class="col-md-4 offset-md-4">
+                <a href="https://localhost:5000">
+                    <img alt="Sweet UCAB" src="/static/images/sweet_ucab_logo.png"
+                    width="450" height="120">
+                 </a>
+                <h2 style="text-align: center;">Registro Usuario</h2>
+
+                <form id="userForm" class="card card-body text-white" style="background-color: #202020;">
+                    <label for="username">Nombre</label>
+                    <input
+                    type="text"
+                    name="nombre"
+                    placeholder="Pedro Pepe" 
+                    class="form-control mb-2" 
+                    required 
+                    />
+                    
+                    <label for="username">Email</label>
+                    <input
+                    type="email"
+                    name="email"
+                    placeholder="email@email.com" 
+                    class="form-control mb-2" 
+                    required 
+                    />
+                    
+                    <label for="username">Password</label>
+                    <input
+                    type="password"
+                    name="password"
+                    placeholder="Escribe pue" 
+                    class="form-control mb-2" 
+                    required 
+                    />
+
+                    <button class="btn btn-primary">Save</button>
+                </form>
+
+                <ul id="userlist" class="list-group">
+                </ul>
+            </div>
+        </div>
+
+        <script src="/static/main.js"></script>
+    </body>
+</html>
